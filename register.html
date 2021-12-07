@@ -19,20 +19,20 @@
 			</section>
 		</div>
 		<div class="form__box">
-			<form action="#" class="form form_signin">
+			<form action="#" class="form form_signin" method="post">
 				<h3 class="form__title">Login</h3>
-				<p><input type="text" class="form__input" placeholder="Username"></p>
-				<p><input type="password" class="form__input" placeholder="Password"></p>	
-				<p><button class="form__btn">Go</button></p>
-				<p><a href="#" class="form__forgot">Forgot your password?</a></p>
+				<p><input type="text" name="username" class="form__input" placeholder="Username"></p>
+				<p><input type="password" name="password" class="form__input" placeholder="Password"></p>	
+				<p><button name="submit" class="form__btn">Войти</button></p>
 			</form>
 
-			<form action="#" class="form form_signup">
+			<form action="php/signup.php" class="form form_signup" method="post" enctype="multipart/form-data">
 				<h3 class="form__title">Register</h3>
-				<p><input type="text" class="form__input" placeholder="Username"></p>
-				<p><input type="password" class="form__input" placeholder="Password"></p>	
-				<p><input type="password" class="form__input" placeholder="Repeat password"></p>	
-				<p><button class="form__btn form__btn_signup">Next</button></p>
+				<p><input type="text" name="full_name" class="form__input" placeholder="Your full name"></p>
+				<p><input type="text" name="login" class="form__input" placeholder="Login"></p>
+				<p><input type="password" name="password" class="form__input" placeholder="Password"></p>	
+				<p><input type="password" name="password_confirm" class="form__input" placeholder="Repeat password"></p>	
+				<p><button class="form__btn form__btn_signup">Register</button></p>
 			</form>
 		</div>
 	</article>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<!---- Иконки ---->
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+	<!----- Montserrat шрифт ---->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+	<!---- Open Sans шрифт ---->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+	<title>AboutHTML</title>
+</head>
+
+<body>
+<!---- ШАПКА САЙТА ----->
+	<section class="sub-header">
+		<nav>
+			<a href="index.html"><i class="fa fa-cube fa-2x" aria-hidden="true"></i></a>
+			<div class="nav_menu" id="navMenu">
+				<i class="fa fa-times-circle" onclick="HideMenu()"></i>
+				<ul>
+					<li><a href="index.html">Главная</a></li>
+					<li><a href="abouthtml.html">HTML</a></li>
+					<li><a href="aboutcss.html">CSS</a></li>
+					<li><a href="contact.html">Контакты</a></li>
+				</ul>
+			</div>
+			<div class="bars"><i class="fa fa-bars" onclick="ShowMenu()"></i></div>
+		</nav>
+		<h1>Связь с нами</h1>
+	</section>
+
+
+<!------- ЛОКАЦИЯ -------->
+	<section class="location">
+		
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d186079.58261796052!2d76.80542711434306!3d43.22011227331974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38836e7d16c5cbab%3A0x3d44668fad986d76!2z0JDQu9C80LDRgtGL!5e0!3m2!1sru!2skz!4v1638842107761!5m2!1sru!2skz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+		</iframe>
+
+	</section>
+
+	<section class="contact-us">
+		<div class="row">
+			<div class="contact-col">
+				<div>
+					<i class="fa fa-home"></i>
+					<span>
+						<h5>Satbayev University</h5>
+						<p>Almaty, Kazakhstan</p>
+					</span>
+				</div>
+				<div>
+					<i class="fa fa-phone"></i>
+					<span>
+						<h5>+7 777 777 77 77</h5>
+						<p>Понедельник - пятница, 10:00-17:00</p>
+					</span>
+				</div>
+				<div>
+					<i class="fa fa-phone"></i>
+					<span>
+						<h5>o.you@gmail.com</h5>
+						<p>Наша email адрес</p>
+					</span>
+				</div>
+			</div>
+			<div class="contact-col">
+				<form action="form-handler.php" method="post">
+					<input type="text" name="name" placeholder="Ваше Имя" required>
+					<input type="email" name="email" placeholder="Ваш Email адрес" required>
+					<input type="text" name="opinion" placeholder="Ваше мнение" required>
+					<textarea rows="8" name="message" placeholder="Сообщения" required></textarea>
+					<button type="submit" class="register_btn red-btn">Отправить</button>
+				</form>
+			</div>
+		</div>
+	</section>
+
+<!---- Footer ---->
+	<section class="footer">
+		<h4>Мы в социальных сетях</h4>
+		<div class="icons">
+			<i class="fa fa-vk fa-2x"></i>
+			<i class="fa fa-instagram fa-2x"></i>
+			<i class="fa fa-envelope-o fa-2x"></i>
+			<i class="fa fa-telegram fa-2x"></i>
+		</div>
+	</section>
+
+
+<!---- JAVASCRIPT подключение ---->
+	<script src="js/script.js"></script>
+
+</body>
+</html>

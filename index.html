@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<!---- Иконки ---->
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+	<!----- Montserrat шрифт ---->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+	<!---- Open Sans шрифт ---->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+	<title>OnlineSchool</title>
+</head>
+
+<body>
+<!---- ШАПКА САЙТА ----->
+	<section class="header">
+		<nav>
+			<a href="index.html"><i class="fa fa-cube fa-2x" aria-hidden="true"></i></a>
+			<div class="nav_menu" id="navMenu">
+				<i class="fa fa-times-circle" onclick="HideMenu()"></i>
+				<ul>
+					<li><a href="index.html">Главная</a></li>
+					<li><a href="abouthtml.html">HTML</a></li>
+					<li><a href="aboutcss.html">CSS</a></li>
+					<li><a href="contact.html">Контакты</a></li>
+					<li><a href="register.html" class="register_btn">Войти</a><li>
+				</ul>
+			</div>
+			<div class="bars"><i class="fa fa-bars" onclick="ShowMenu()"></i></div>
+		</nav>
+
+		<div class="text_box">
+			<h1>Grant Education Centre</h1>
+			<p>Если ты хочешь научиться создавать сайты, а после стать фрилансером, то поскорее присоединяйся к нам.</p>
+			<a href="" class="register_btn">Регистрация</a>
+		</div>
+	</section>
+
+
+<!---- Блок HTML ----->
+	<section class="html">
+		<h1>HTML - язык разметки.</h1>
+		<p>Данный раздел посвящен различным технологиям веб-программирования. К ним можно отнести HTML5.</p>
+
+		<div class="row">
+			<div class="html-col">
+				<h3>Описание HTML</h3>
+				<p>HTML (Hypertext Markup Language) - это код, который используется для структурирования и отображения веб-страницы и её контента. Например, контент может быть структурирован внутри множества параграфов, маркированных списков или с использованием изображений и таблиц данных.</p>
+			</div>
+			<div class="html-col">
+				<h3>Является ли HTML языком программирования?</h3>
+				<p>Нет. Такие языки используются для написания программ и веб-приложений, в них есть условия, функции, переменные, операторы и так далее. В HTML есть только теги, которые помогают браузеру правильно отобразить содержимое сайта.При этом во многих источниках говорится, что HTML все-таки относится к языкам программирования. Часть из них сомнительные, но встречаются и вполне авторитетные.</p>
+			</div>
+			<div class="html-col">
+				<h3>Как долго учить HTML</h3>
+				<p>Основы, которых хватит на создание простых сайтов, можно изучить за час. То есть быстрее, чем была написана эта статья. Но, как и в любом деле, мастерство приходит с практикой. Мало просто создать каркас — нужно убедиться, что он правильно отображается везде.</p>
+			</div>
+
+		</div>
+	</section>
+
+
+<!---- Блок CSS ---->
+	<section class="css">
+		<h1>CSS - стилизация</h1>
+		<p>Данный раздел посвящен различным технологиям веб-программирования. К ним можно отнести CSS3</p>
+
+		<div class="row">
+			<div class="css-col">
+				<h3>Описание CSS</h3>
+				<p>CSS (Cascading Style Sheets) — это код, который вы используете для стилизации вашей веб-страницы. Основы CSS помогут вам понять, что вам нужно для начала работы. </p>
+			</div>
+			<div class="css-col">
+				<h3>Подробнее про CSS</h3>
+				<p>Обычно CSS-стили используются для создания и изменения стиля элементов веб-страниц и пользовательских интерфейсов, написанных на языках HTML и XHTML, но также могут быть применены к любому виду XML-документа, в том числе XML, SVG и XUL. Отделяя стиль представления документов от содержимого документов, CSS упрощает создание веб-страниц и обслуживание сайтов.</p>
+			</div>
+			<div class="css-col">
+				<h3>История CSS</h3>
+				<p>В 1990-х годах стала ясна необходимость стандартизировать Web, создать какие-то единые правила, по которым программисты и веб-дизайнеры проектировали бы сайты. Так появились языки HTML 4.01 и XHTML, и стандарт CSS. Термин «каскадные таблицы стилей» был предложен Хоконом Ли в 1994 году. Совместно с Бертом Босом он стал развивать CSS. В отличие от многих существовавших на тот момент языков стиля, CSS использует наследование от родителя к потомку, поэтому разработчик может определить разные стили, основываясь на уже определённых ранее стилях.</p>
+			</div>
+	</section>
+
+
+<!---- Блок FrontEnd ---->
+	<section class="frontend">
+		<h1>Для Frontend разработки.</h1>
+		<p>Что вы должны знать, для создания простого сайта?</p>
+		<div class="row">
+			<div class="frontend-col">
+				<img src="images/HTML.png">
+				<h3>HTML-язык разметки.</h3>	
+				<p>HTML - это язык разметки, который мы используем для визуального и смыслового структурирования нашего web контента.</p>
+			</div>
+			<div class="frontend-col">
+				<img src="images/CSS.png">
+				<h3>CSS-стилизация web-страницы.</h3>
+				<p>CSS - это язык стилей с помощью которого мы придаём стиль отображения нашего HTML контента.</p>
+			</div>
+			<div class="frontend-col">
+				<img src="images/JS.png">
+				<h3>JavaScript-динамически обновляемый контент</h3>
+				<p>JavaScript язык программирования, который позволяет вам создать динамически обновляемый контент.</p>
+			</div>
+		</div>
+	</section>
+
+
+<!---- Блок Отзывов ---->
+	<section class="testimonials">
+		<h1>Что говорят о нас люди?</h1>
+			<div class="row">
+				<div class="testimonial-col">
+					<img src="images/student1.png">
+					<div>
+						<p>Отличный курс для новичка, ознакомился со всей базой, дальше уже можно смотреть углублённые курсы по отдельным темам, ну и изучать документации по всем необходимым инструментам.Спасибо организаторам за полезную и достоверную информацию по теме. </p>
+						<h3>Danel</h3>
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<i class="fa fa-star" aria-hidden="true"></i>
+					</div>
+				</div>
+				<div class="testimonial-col">
+					<img src="images/student2.png">
+					<div>
+						<p>Даже не ожидал что можно так быстро освоить столь сложную программу. Установлены прочные связи с работодателями, поэтому не пришлось оббивать пороги в поисках работы. Спасибо за компетентность и терпение всем.</p>
+						<h3>Aidyn</h3>
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<i class="fa fa-star-half-o" aria-hidden="true"></i>
+					</div>
+				</div>
+		</div>
+	</section>
+
+
+<!---- Блок Контактов ---->
+	<section class="contact">
+		<h1>Если вам что-то непонятно, <br> напишите нам, мы обязательно вам ответим.</h1>
+		<a href="" class="register_btn">Связаться с нами</a>
+	</section>
+
+
+<!---- Footer ---->
+	<section class="footer">
+		<h4>Мы в социальных сетях</h4>
+		<div class="icons">
+			<i class="fa fa-vk fa-2x"></i>
+			<i class="fa fa-instagram fa-2x"></i>
+			<i class="fa fa-envelope-o fa-2x"></i>
+			<i class="fa fa-telegram fa-2x"></i>
+		</div>
+	</section>
+
+
+<!---- JAVASCRIPT подключение ---->
+	<script src="js/script.js"></script>
+</body>
+</html>

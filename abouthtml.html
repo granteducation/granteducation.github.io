@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<!---- Иконки ---->
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+	<!----- Montserrat шрифт ---->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+	<!---- Open Sans шрифт ---->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+	<title>AboutHTML</title>
+</head>
+
+<body>
+<!---- ШАПКА САЙТА ----->
+	<section class="sub-header">
+		<nav>
+			<a href="index.html"><i class="fa fa-cube fa-2x" aria-hidden="true"></i></a>
+			<div class="nav_menu" id="navMenu">
+				<i class="fa fa-times-circle" onclick="HideMenu()"></i>
+				<ul>
+					<li><a href="index.html">Главная</a></li>
+					<li><a href="abouthtml.html">HTML</a></li>
+					<li><a href="aboutcss.html">CSS</a></li>
+					<li><a href="contact.html">Контакты</a></li>
+				</ul>
+			</div>
+			<div class="bars"><i class="fa fa-bars" onclick="ShowMenu()"></i></div>
+		</nav>
+		<h1>HTML</h1>
+	</section>
+
+
+<!------------- Все про HTML --------------------------------->
+	<section class="about-html">
+		<div class="row">
+			<div class="about-col">
+				<h1>HTML - язык разметки.</h1>
+				<p>HTML (Hypertext Markup Language) - это код, который используется для структурирования и отображения веб-страницы и её контента. Например, контент может быть структурирован внутри множества параграфов, маркированных списков или с использованием изображений и таблиц данных. <br> Основы, которых хватит на создание простых сайтов, можно изучить за час. То есть быстрее, чем была написана эта статья. Но, как и в любом деле, мастерство приходит с практикой. Мало просто создать каркас — нужно убедиться, что он правильно отображается везде.</p>
+			</div>
+			<div class="about-col">
+				<img src="images/HTML.png">
+			</div>
+		</div>
+	</section>
+
+	<section class="about-html">
+		<div class="row">
+			<div class="about-col-1">
+				<h1>Возможности HTML</h1>
+				<p>Язык состоит из тегов — это своеобразные команды, которые преобразовываются в визуальные объекты в браузере пользователя. Например, тег <img> используется для размещения изображений на странице. У него есть обязательный атрибут src, в котором указывается ссылка на файл.
+
+				Вот как будет выглядеть код:
+				<img src="images/skillbox.png" width="60%">
+				<br> А вот как этот код выглядит в браузере:<br>
+				<img src="images/skillbox2.png" width="50%" >
+				</p>
+				<p>Еще вы могли заметить тег p. Он используется для создания абзацев. Этот тег парный, то есть на конце абзаца должен стоять закрывающий /p. Парные теги применяются для разметки блоков:
+					<ul class="spisok">
+						<li>контейнеров;</li>
+						<li>абзацев;</li>
+						<li>заголовков;</li>
+						<li>списков;</li>
+						<li>таблиц и т.д.</li>
+					</ul>
+				</p>
+				<h1>Что нельзя сделать на HTML</h1>
+				<p>
+					Простыми словами, HTML — это каркас сайта. В нем могут быть прописаны:
+					<ul class="spisok">
+						<li>ссылки;</li>
+						<li>таблицы;</li>
+						<li>изображения;</li>
+						<li>формы;</li>
+						<li>абзацы;</li>
+						<li>блоки и т.д.</li>
+					</ul>
+				</p>
+				<p>
+					Также есть ограниченные возможности по изменению внешнего вида:
+					<ul class="spisok">
+						<li>поменять цвет;</li>
+						<li>указать фоновое изображение;</li>
+						<li>изменить шрифт;</li>
+						<li>сделать текст жирным, курсивным, подчеркнутым, зачеркнутым и т.д.;</li>
+					</ul>
+				</p>
+				<p>
+					На данный момент выпущено пять версий языка. Первая версия была разработана между 1986 и 1991 годами, а последняя (5.2) — в 2017. Изначально он должен был стать независимым от каких-либо платформ — отображаться везде одинаково. Но этого не случилось, потому что у пользователей росли требования к мультимедиа.
+
+					Как итог, код интерпретируется по-разному не только на разных устройствах, но и в разных браузерах. Это не плохо, потому что требования отличаются: пользователь, заходящий на сайт с телефона, готов к ограниченному функционалу и минималистичному дизайну, а владелец ПК зачастую хочет большего.
+
+					В пятой редакции HTML стал чуть независимее от других языков. Раньше проверка правильного заполнения форм была исключительно на JS, а теперь часть задач можно переложить на HTML.
+
+					Например, можно указать тип данных, которые должны вводиться в поле. Если пользователь попробует ввести что-то не то, у него не получится. Сами же поля стали более дружелюбными: пользователь может выбрать дату, время и даже цвет, может указать число из интервала, корректный адрес электронной почты или ссылку на сайте.
+
+					Появился встроенный плеер — теперь не нужно подключать Adobe Flash Player или другие плагины. Визуальная часть перетаскивания элементов теперь реализуется на HTML и CSS, если добавить атрибут draggable.
+				</p>
+			</div>
+		</div>
+	</section>
+
+<!---- Footer ---->
+	<section class="footer">
+		<h4>Мы в социальных сетях</h4>
+		<div class="icons">
+			<i class="fa fa-vk fa-2x"></i>
+			<i class="fa fa-instagram fa-2x"></i>
+			<i class="fa fa-envelope-o fa-2x"></i>
+			<i class="fa fa-telegram fa-2x"></i>
+		</div>
+	</section>
+
+
+<!---- JAVASCRIPT подключение ---->
+	<script src="js/script.js"></script>
+
+</body>
+</html>
